@@ -1,4 +1,4 @@
-import datetime as date
+import datetime 
 
 # Function to display current date
 def display_current_date():
