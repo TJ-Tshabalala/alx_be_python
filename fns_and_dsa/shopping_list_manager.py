@@ -9,23 +9,23 @@ def main():
     shopping_list = [] # Empty list
     while True:
         display_menu()
-        choice = input("Enter your choice: ")
-        if choice == "1":
+        choice = int(input("Enter your choice: "))
+        if choice == 1:
             item = input("Add the item: ")
             shopping_list.append(item)
             pass
-        elif choice == "2":
+        elif choice == 2:
             item = input("Remove: ")
             if item in shopping_list:
                 shopping_list.remove(item)
             else:
                 print("This item is not in the shopping list.")
                 pass  
-        elif choice == "3":
+        elif choice == 3:
             for item in shopping_list:
                 print(item)
                 pass
-        elif choice == "4":
+        elif choice == 4:
             print("Goodbye!")
             break
         else:
