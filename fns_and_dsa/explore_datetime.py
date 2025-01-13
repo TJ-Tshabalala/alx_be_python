@@ -1,7 +1,8 @@
 import datetime 
 # Function to display current date
 def display_current_date():
-    current_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    current_date = datetime.datetime.now()
+    current_date.strftime("%Y-%m-%d %H:%M:%S")
     print(f"Current date and time: {current_date}") #Print out current datetime
 
 def calculate_future_date():
@@ -18,3 +19,11 @@ calculate_future_date()
 
 
 
+def main():
+    while True:
+        display_current_date()
+        calculate_future_date()
+
+
+if __name__ == "__main__":
+    main()

@@ -12,3 +12,9 @@ def perform_operation(num1,num2,operation):
             return("Cannot divide by 0.")
         return num1 // num2
     
+    def main():
+        perform_operation()
+
+    
+    if __name__ == "__main__":
+        main()
