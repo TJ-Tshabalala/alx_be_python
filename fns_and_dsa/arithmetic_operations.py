@@ -12,9 +12,13 @@ def perform_operation(num1,num2,operation):
             return("Cannot divide by 0.")
         return num1//num2
     
-    def main():
-        perform_operation()
+def main():
+        num1 = float(int(input("Enter the first number: ")))
+        num2 = float(int(input("Enter the second number: ")))
+        operation = input("Enter the operation (add, subtract, multiply, divide): ").strip().lower()
+        result = perform_operation(num1, num2, operation)
+        print(f"Result: {result}")
 
     
-    if __name__ == "__main__":
+if __name__ == "__main__":
         main()
