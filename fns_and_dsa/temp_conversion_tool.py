@@ -29,7 +29,7 @@ def main():
       print(f"{temperature:.1f}°{unit} is {converted_temperature:.1f} {original_unit}")
       break
     except ValueError:
-      print(f"Invalid Temperature. Please enter a numeric value.")
+      print("Invalid temperature. Please enter a numeric value.")
 
     
 if __name__ == "__main__":
