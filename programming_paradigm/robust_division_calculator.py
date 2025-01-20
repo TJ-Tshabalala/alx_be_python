@@ -8,5 +8,5 @@ def  safe_divide(numerator,denominator):
                 except Exception as e:
                    print(e)
                 else:
-                   return f"The result of the division is {result}"
+                   print(f"The result of the division is {result}")
 
