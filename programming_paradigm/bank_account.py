@@ -14,6 +14,6 @@ class BankAccount:
         except Exception:
             return f"Insufficient funds."
         
-    def display_balance(self,amount):
-        amount = self.account_balance
-        print("Current Balance: ${amount:.2f}")
+    def display_balance(self):
+        
+        print("Current Balance: ${self.account_balance:.2f}")
