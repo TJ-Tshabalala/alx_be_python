@@ -11,7 +11,8 @@ class BankAccount:
             if amount < self.account_balance:
                 self.account_balance -= amount
         except Exception:
-            return f"Insufficient amount, withdrawal of {amount} not processed."
+            return f"Insufficient funds."
         
-    def display_balance(self):
-        print("Current Balance: {self.account_balance}")
+    def display_balance(self, current_balance):
+        current_balance = self.account_balance
+        print("Current Balance: {current_balance}")
