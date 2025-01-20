@@ -14,4 +14,4 @@ class BankAccount:
             return f"Insufficient amount, withdrawal of {amount} not processed."
         
     def display_balance(self):
-        print(self.account_balance)
+        print("Current Balance: {self.account_balance}")
