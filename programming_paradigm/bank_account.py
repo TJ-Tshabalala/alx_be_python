@@ -10,6 +10,7 @@ class BankAccount:
         try:
             if amount < self.account_balance:
                 self.account_balance -= amount
+                return f"Withdrew ${amount}"
         except Exception:
             return f"Insufficient funds."
         
