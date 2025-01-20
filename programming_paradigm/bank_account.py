@@ -15,4 +15,4 @@ class BankAccount:
             return f"Insufficient funds."
         
     def display_balance(self):
-        return("Current Balance: ${self.account_balance}")
+        return("Current Balance: $ {self.account_balance}")
