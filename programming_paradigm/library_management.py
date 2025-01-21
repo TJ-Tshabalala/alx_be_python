@@ -10,17 +10,17 @@ class Library:
     def __init__(self):
         self._books =[]
 
-    def add_book(self,book):
+    def AddBook(self,book):
         self._books.append(book)
     
-    def check_out_book(self,title):
+    def CheckOutBook(self,title):
 
         for book in self._books:
             if book.title == title and not book._is_checked_out():
                 book._is_checked_out = True
                 return f"Successfully checked out '{title}'"
             return f"Sorry, '{title}' is not available for checkout."
-    def return_book(self, title):
+    def ReturnBook(self, title):
 
         for book in self._books:
             if book.title == title and not book.is_checked_out():
