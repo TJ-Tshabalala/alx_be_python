@@ -11,7 +11,7 @@ class Library:
         self._books =[]
 
     def add_book(self,book):
-        self.books = self._books.append(book)
+        self.books = self._books.append[book]
 
     
     def check_out(self,title):
@@ -24,7 +24,7 @@ class Library:
     def return_book(self):
 
         for book in self._books:
-            if book.title == title and not book.is_checked_out():
+            if book.title == self.title and not book.is_checked_out():
                 book._is_checked_out = False
                 return f"Successfully returned '{self.title}'"
         return f"Sorry, '{self.title}' is not currently checked out."
