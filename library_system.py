@@ -1,5 +1,5 @@
 class Book:
-    def __str__(self, title:str , author: str):
+    def __init__(self, title:str , author: str):
         self.title = title
         self.author = author
 
